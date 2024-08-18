@@ -20,14 +20,14 @@ rm -rfv ${ROOTFS_DIR}/usr/bin/vendor*
 
 
 echo "ko"
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/kflow*
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_gc4653
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_gc5603
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_imx290
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_os02k10
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_os05a10
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/kflow*
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_gc4653
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_gc5603
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_imx290
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_os02k10
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/hdal/sen_os05a10
 
-rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/extra/net/rtl8189fs
+#rm -rfv ${ROOTFS_DIR}/lib/modules/4.19.91/extra/net/rtl8189fs
 
 echo "media"
 rm -rfv ${ROOTFS_DIR}/etc_Model/etc_562_IPCAM1_EVB/snd
