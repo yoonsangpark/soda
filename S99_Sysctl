@@ -1,0 +1,29 @@
+[ -f /etc/sysctl.conf ] && sysctl -p >&-
+free
+
+sleep 1
+# ifconfig eth0 192.168.0.4;
+
+telnetd
+sleep 2
+
+rm -rf /mnt/sd/FW98566A.bin
+
+# #set time
+# date -s "2025-02-19 09:00:00"
+
+# mkdir
+RECORDINGS_DIR="/mnt/sd/recordings"
+[ ! -d "$RECORDINGS_DIR" ] && mkdir -p "$RECORDINGS_DIR"
+
+# HTTP
+chmod +x /mnt/sd/recordings/cgi-bin/main.cgi
+
+cd ${RECORDINGS_DIR}
+httpd -fvvvp 80 &
+
+sleep 3
+
+#start koosvc
+# echo "Starting koo_svc"
+koo_svc
